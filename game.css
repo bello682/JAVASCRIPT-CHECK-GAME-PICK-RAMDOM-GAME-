@@ -1,0 +1,551 @@
+* {
+	box-sizing: border-box;
+}
+
+#Section {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.time {
+	width: 10%;
+	left: 1350px;
+	top: 1px;
+	border: none;
+	line-height: 0;
+	border-radius: 10px;
+	color: white;
+	z-index: 30;
+	position: fixed;
+	margin-bottom: 20px;
+	display: none;
+}
+
+@keyframes timeflash {
+	from {
+		text-shadow: 0 0 10px rgb(3, 3, 3);
+		box-shadow: 20px 60px 100px rgb(11, 11, 11);
+	}
+
+	to {
+		text-shadow: 0 0 10px rgb(226, 13, 13);
+		box-shadow: 20px 60px 100px rgba(0, 0, 0, 0);
+	}
+}
+
+.time #countDown {
+	font-size: 70px;
+	text-align: center;
+	animation: timeflash 1s infinite alternate;
+	text-shadow: 0 0 10px rgb(37, 22, 22);
+	box-shadow: 20px 60px 100px rgba(220, 13, 13, 0.389);
+}
+
+.popup2 {
+	border: 2px solid;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	flex-direction: column;
+	margin: 90px 400px;
+	padding: 0 10px 0 250px;
+	width: 50%;
+	height: 50vh;
+	position: fixed;
+	z-index: 10;
+	background-color: red;
+	border: none;
+	border-radius: 20px;
+}
+
+.popup2 #ddd-dd {
+	padding-left: 75px;
+}
+
+#s-s-d {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 150px;
+	right: 0;
+	color: rgb(223, 215, 215);
+}
+
+.bts a {
+	text-decoration: none;
+}
+
+.bts a:hover {
+	color: white;
+}
+
+.overgames {
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	background: white;
+	color: black;
+}
+
+.overgames:hover {
+	background: red;
+	color: white;
+}
+
+.popup {
+	width: 50%;
+	height: 50vh;
+	border: 1px solid;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	margin: 100px 350px;
+	z-index: 10;
+	background: black;
+	color: white;
+	overflow: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	/* pointer-events: painted; */
+}
+
+.popup .h_d {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background: white;
+}
+
+.h_d #startbtn {
+	height: 7vh;
+	padding: 0 40px;
+	margin-top: 8px;
+	border-radius: 10px;
+	border: none;
+	font-size: 20px;
+	animation: timeflash 1s infinite alternate;
+}
+
+#startbtn:hover {
+	color: white;
+	background: black;
+}
+
+.popup hr {
+	width: 100%;
+	border: 2px solid;
+	margin-top: 0;
+}
+
+.popup ol {
+	width: 90%;
+	text-indent: 10px;
+}
+
+.popup ol li {
+	margin-bottom: 20px;
+	line-height: 1;
+}
+
+.game_body {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	margin: 90px auto 0 auto;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.indomie_table {
+	width: 7%;
+	height: 15vh;
+	border: none;
+	border-radius: 100px;
+	margin: 20px;
+	display: flex;
+	background: #ccc;
+	position: relative;
+}
+
+.div_over {
+	width: 100%;
+	height: 15vh;
+	border-radius: 100px;
+	border: 1px solid red;
+	display: flex;
+	cursor: pointer;
+	position: absolute;
+	background-image: url(images/coverimage/basketball.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background: linear-gradient(rgba(0, 0, 0, 0.989), rgb(55, 54, 54)); */
+	z-index: 3;
+}
+
+.image_div {
+	width: 100%;
+	height: 15vh;
+	border-radius: 100px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: auto;
+}
+
+.image_row {
+	width: 100%;
+	height: 15vh;
+	object-fit: cover;
+	border-radius: 100px;
+}
+
+.result_display {
+	width: 40%;
+	height: 40vh;
+	display: flex;
+	justify-self: center;
+	margin: 20px auto;
+}
+
+.result {
+	width: 20%;
+	height: 25vh;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	border: none;
+	border: none;
+	background: #ccc;
+	border-radius: 10px;
+}
+
+#image_row {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.game_body2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	margin: 20px 20px;
+	padding: 10px 15px;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	color: #5f5252;
+	transition: all 1s ease-in-out;
+}
+
+.button:hover {
+	color: black;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+/* SAVE SCORE PAGE */
+.inputScore {
+	border: 1px solid;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	background-color: black;
+}
+
+#inputsecondScore {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	/* border: 1px solid red; */
+}
+
+label {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #ccc;
+}
+
+#inputsecondScore .inputs {
+	width: 70%;
+	padding: 10px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid #ccc;
+	color: green;
+}
+
+#SubmitScoreBtn {
+	padding: 10px 30px;
+	border-radius: 10px;
+	border: none;
+	background: rgb(49, 50, 49);
+	color: white;
+	font-size: 15px;
+}
+
+#SubmitScoreBtn:hover {
+	background: white;
+	color: black;
+}
+
+/* DASHBOARD PAGE */
+
+.dashboard_main_body {
+	width: 100%;
+	height: 100vh;
+	border: none;
+	border-radius: 10px;
+	background-color: black;
+	/* overflow: hidden; */
+}
+
+.dash_side_bar {
+	width: 21%;
+	height: 97vh;
+	position: fixed;
+	overflow: hidden;
+	border-radius: 10px;
+	border: none;
+	margin: 10px 10px 10px 0;
+	/* background: white; */
+}
+
+.dash_sidebar_wall {
+	width: 100%;
+	height: 100vh;
+}
+
+.dash_side_logo .logo_image_dash_side {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto;
+}
+
+/* .dash_userimg {
+	width: 100%;
+	height: 15vh;
+	margin-top: 20px;
+} */
+
+.icon_dash_side {
+	font-size: 80px;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto;
+	display: flex;
+	border: 1px solid #ccc;
+	border-radius: 100px;
+	padding: 15px;
+	color: #ccc;
+}
+
+.client_btn_side_dash {
+	width: 100;
+	height: 10vh;
+	line-height: 0;
+}
+
+/* .client_name_dash {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto 5px auto;
+	display: flex;
+	font-size: 20px;
+	color: #ccc;
+} */
+
+.btn_dash {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: 20px auto;
+	border: navajowhite;
+	border-radius: 5px;
+	padding: 5px 20px;
+	background: rgb(79, 77, 77);
+	color: white;
+}
+
+.dashboard_page {
+	width: 78%;
+	height: 97vh;
+	float: right;
+	background-color: white;
+	border: none;
+	border-radius: 10px;
+	margin: 10px 10px 10px 0;
+}
+
+.dash_title {
+	margin-left: 20px;
+}
+
+.dash_head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.dash_logout button {
+	margin-right: 20px;
+	padding: 5px 20px;
+	border: 2px solid #ccc;
+	border-radius: 20px;
+	font-size: 15px;
+	color: #ccc;
+	background: white;
+}
+
+.dash_logout button:hover {
+	color: black;
+	margin-top: 10px;
+}
+
+hr {
+	border: 2px solid;
+}
+
+.dash_card {
+	width: 95%;
+	display: flex;
+	border: none;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+}
+
+.dash_single_card {
+	width: 30%;
+	height: auto;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	padding: 5px;
+	box-shadow: 20px 60px 100px rgba(0, 0, 0, 0.114);
+	margin-top: 10px;
+}
+
+.dash_single_card h3,
+.dash_single_card p {
+	width: 70%;
+	height: auto;
+}
+
+.icon_dash {
+	border: 1px solid;
+	padding: 15px;
+	margin-right: 5px;
+	border-radius: 100px;
+	color: #ccc;
+	background-color: black;
+}
+
+.dash_single_message {
+	width: 90%;
+	border: none;
+	margin: 15px auto;
+	border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding: 20px;
+	background: white;
+	box-shadow: 20px 60px 100px rgba(0, 0, 0, 0.148);
+}
+
+.flashing-light {
+	width: 50%;
+	font-size: 48px;
+	font-weight: bold;
+	color: green;
+	box-shadow: 20px 60px 100px rgba(0, 0, 0, 0.389);
+	text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+	animation: flashing 1s infinite alternate;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: 90px auto;
+	border: none;
+	border-radius: 20px;
+}
+@keyframes flashing {
+	from {
+		text-shadow: 0 0 10px rgb(3, 3, 3);
+		box-shadow: 20px 60px 100px rgba(0, 0, 0, 0.389);
+	}
+	to {
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0);
+		box-shadow: 20px 60px 100px rgba(0, 0, 0, 0);
+	}
+}
+
+/* DASHBOARD PAGE  END*/
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 477px) {
+	.indomie_table {
+		width: 50px;
+		height: 50px;
+		border: none;
+		border-radius: 100px;
+		margin: 20px;
+		display: flex;
+		background: #ccc;
+		position: relative;
+	}
+
+	.image_div {
+		width: 100%;
+		height: 50px;
+		border-radius: 100px;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	.image_row {
+		width: 100%;
+		height: 50px;
+		object-fit: cover;
+		border-radius: 100px;
+	}
+
+	.div_over {
+		width: 50px;
+		height: 50px;
+		border-radius: 100px;
+		border: 1px solid red;
+		display: flex;
+		cursor: pointer;
+		position: absolute;
+		background-image: url(images/basketball.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* background: linear-gradient(rgba(0, 0, 0, 0.989), rgb(55, 54, 54)); */
+		z-index: 3;
+	}
+}

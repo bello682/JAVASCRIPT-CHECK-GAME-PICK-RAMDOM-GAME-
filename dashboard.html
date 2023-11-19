@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DASHBOARD</title>
+		<link rel="stylesheet" href="game.css" />
+	</head>
+	<body>
+		<div class="dashboard_main_body">
+			<div class="dash_side_bar">
+				<div class="dash_sidebar_wall">
+					<div class="dash_side_logo">
+						<img src="images/fLOGO.jpg" alt="" class="logo_image_dash_side" />
+					</div>
+
+					<div class="dash_userimg">
+						<i class="icon_dash_side"></i>
+					</div>
+					<div class="client_btn_side_dash">
+						<button class="btn_dash">PRO &#129305;</button>
+						<!-- <h3 class="client_name_dash" id="">Joy Ebosetele</h3> -->
+					</div>
+				</div>
+			</div>
+			<div class="dashboard_page">
+				<div class="dashboard_wrapper">
+					<div class="dash_head">
+						<h1 class="dash_title">Dashboard</h1>
+						<div class="dash_logout">
+							<button>Logout <FaSignInAlt /></button>
+						</div>
+					</div>
+					<hr />
+					<div class="dash_card" id="dash_card">
+						<div class="dash_single_card">
+							<i class="icon_dash"></i>
+							<h3 id="first-name">Joy</h3>
+						</div>
+						<div class="dash_single_card">
+							<i class="icon_dash"></i>
+							<h3 id="last-name">Ebosetele</h3>
+						</div>
+						<div class="dash_single_card">
+							<i class="icon_dash"></i>
+							<p id="selection">Female</p>
+						</div>
+					</div>
+					<div>
+						<div class="dash_single_message">
+							<i class="icon_dash"></i>
+							<marquee loop="-1" scrollamount="5"> Good Job!!!!!!!!!!!!!!!!!!! </marquee>
+						</div>
+					</div>
+					<div class="flashing-light congratulation_text">
+						<p>Thank You!!!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const dashFirstname = localStorage.getItem("first-name");
+			const dashLastname = localStorage.getItem("last-name");
+			const dashSelection = localStorage.getItem("selection");
+
+			document.getElementById("first-name").innerText = dashFirstname;
+			document.getElementById("last-name").innerText = dashLastname;
+			document.getElementById("selection").innerText = dashSelection;
+		</script>
+	</body>
+</html>

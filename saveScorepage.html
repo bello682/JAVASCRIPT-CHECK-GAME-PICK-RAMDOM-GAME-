@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SCORE INPUT</title>
+		<link rel="stylesheet" href="game.css" />
+	</head>
+	<body>
+		<form class="inputScore" id="inputScore">
+			<div id="inputsecondScore">
+				<label>
+					Player's First Name:
+					<input type="text" class="inputs"   placeholder="first name" value="" id="firstname" />
+				</label>
+
+				<label>
+					Player's Last Name:
+					<input type="text" class="inputs"   placeholder="last name" id="lastname" />
+				</label>
+				<label>
+					Player's Gender:
+					<select id="select" class="inputs" >
+						<option value="">Select</option>
+						<option value="Male" id="male">Male</option>
+						<option value="Female" id="female">Female</option>
+					</select>
+				</label>
+			</div>
+			<button id="SubmitScoreBtn">SAVE NOW</button>
+		</form>
+
+		<script>
+			const firstName = document.getElementById("firstname");
+			const lastName = document.getElementById("lastname");
+			const select = document.getElementById("select");
+			const SubmitScoreBtn = document.getElementById("SubmitScoreBtn");
+			const formData = document.getElementById("inputScore");
+
+			formData.addEventListener("submit", (e) => {
+				e.preventDefault();
+				let newFirstName = firstName.value;
+				let newLasteName = lastName.value;
+				let newSelect = select.value;
+
+				localStorage.setItem("first-name", newFirstName);
+				localStorage.setItem("last-name", newLasteName);
+				localStorage.setItem("selection", newSelect);
+
+				window.location.href = "dashboard.html";
+			});
+		</script>
+	</body>
+</html>

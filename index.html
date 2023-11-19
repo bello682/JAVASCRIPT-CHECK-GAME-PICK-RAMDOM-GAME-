@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="game.css" />
+	</head>
+	<body>
+		<section id="Section">
+			<button type="button" class="button" id="instruction">
+				INSTRUCTIONS
+			</button>
+			<div class="time">
+				<h1 id="countDown">00:00</h1>
+			</div>
+
+			<div class="popup2">
+				<h1 id="ddd-dd" style="font-size: 70px">&#129313;</h1>
+				<h1 id="s-s-d">Sorry You Lose!!!</h1>
+				<div class="bts" style="position: relative">
+					<button class="overgames" id="playAgain">Play Again</button>
+					<button class="overgames" id="quitGame">Quit Game</button>
+					<button
+						class="overgames"
+						id="saveScore"
+						style="display: none; position: absolute; top: 50px; left: 60px"
+					>
+						<a href="saveScorepage.html">Save Score</a>
+					</button>
+				</div>
+			</div>
+
+			<div class="popup">
+				<div class="h_d">
+					<h2 style="color: black">INSTRUCTIONS</h2>
+					<button id="startbtn">Start</button>
+				</div>
+				<hr />
+				<ol>
+					<li>STEP: You must initiate the play button to get started.</li>
+					<li>
+						STEP: Then click the start button after reading the instructions
+					</li>
+					<li>
+						STEP: The instruction button will also be available if needed while
+						playing the game.
+					</li>
+					<li>
+						STEP: You are only allowed to choose to click an input more than
+						once.
+					</li>
+					<li>STEP: You must submit after selection of the input.</li>
+					<li>
+						STEP: All images will Always Re-Shuffle, When playing a new game.
+					</li>
+					<li>
+						STEP: Upon any winning you will be allowed to save your name as a
+						successful player.
+					</li>
+					<li>
+						let Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+						perspiciatis. Quis minus dignissimos esse debitis.
+					</li>
+					<li>
+						let Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+						perspiciatis. Quis minus dignissimos esse debitis.
+					</li>
+					<li>
+						let Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+						perspiciatis. Quis minus dignissimos esse debitis.
+					</li>
+					<li>
+						let Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+						perspiciatis. Quis minus dignissimos esse debitis.
+					</li>
+				</ol>
+			</div>
+			<h1 id="errormessage" style="text-align: center; color: red"></h1>
+			<div class="game_body" id="game_body">
+				<div class="indomie_table" id="image_row1">
+					<div class="div_over" id="image_row1"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/1.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row1"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row26">
+					<div class="div_over" id="image_row26"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/13.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row26"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row2">
+					<div class="div_over" id="image_row2"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/2.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row2"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row16">
+					<div class="div_over" id="image_row16"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/3.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row16"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row17">
+					<div class="div_over" id="image_row17"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/4.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row17"
+						/>
+					</div>
+				</div>
+
+				<!-- starting newe line  -->
+
+				<div class="indomie_table" id="image_row3">
+					<div class="div_over" id="image_row3"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/3.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row3"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row25">
+					<div class="div_over" id="image_row25"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/12.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row25"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row4">
+					<div class="div_over" id="image_row4"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/4.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row4"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row5">
+					<div class="div_over" id="image_row5"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/5.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row5"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row6">
+					<div class="div_over" id="image_row6"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/8.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row6"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row18">
+					<div class="div_over" id="image_row18"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/5.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row18"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row19">
+					<div class="div_over" id="image_row19"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/6.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row19"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row7">
+					<div class="div_over" id="image_row7"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/7.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row7"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row8">
+					<div class="div_over" id="image_row8"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/8.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row8"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row24">
+					<div class="div_over" id="image_row24"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/11.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row24"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row9">
+					<div class="div_over" id="image_row9"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/9.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row9"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row10">
+					<div class="div_over" id="image_row10"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/10.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row10"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row22">
+					<div class="div_over" id="image_row22"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/9.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row22"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row23">
+					<div class="div_over" id="image_row23"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/10.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row23"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row11">
+					<div class="div_over" id="image_row11"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/11.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row11"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row12">
+					<div class="div_over" id="image_row12"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/12.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row12"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row21">
+					<div class="div_over" id="image_row21"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/8.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row21"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row20">
+					<div class="div_over" id="image_row20"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/7.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row20"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row13">
+					<div class="div_over" id="image_row13"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/13.jpeg"
+							alt="let"
+							class="image_row"
+							id="image_row13"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row14">
+					<div class="div_over" id="image_row14"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/1.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row14"
+						/>
+					</div>
+				</div>
+
+				<div class="indomie_table" id="image_row15">
+					<div class="div_over" id="image_row15"></div>
+					<div class="image_div" id="image_div">
+						<img
+							src="images/2.jpeg"
+							alt="play"
+							class="image_row"
+							id="image_row15"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="result_display">
+				<div class="result" id="result1"></div>
+				<div class="result" id="result2"></div>
+			</div>
+			<div class="game_body2">
+				<div id="game_comment">
+					<h2></h2>
+				</div>
+				<div class="game_button">
+					<!-- <button type="button" class="button" id="stop">STOP</button> -->
+					<!-- <button type="button" class="button" id="pause">PAUSE</button> -->
+					<button type="button" class="button" id="play">PLAY</button>
+					<button type="button" class="button" id="restart">RESTART</button>
+					<button type="button" class="button" id="submit">SUBMIT</button>
+				</div>
+			</div>
+		</section>
+
+		<script src="game.js"></script>
+	</body>
+</html>
